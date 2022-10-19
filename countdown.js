@@ -3,15 +3,19 @@ var x;
 function yo() {
   var dateInput = document.getElementById("date").value;
   var deadline = new Date(dateInput).getTime();
-  var today = new Date().getTime();
 
   if (dateInput == "") {
-    alert("Veuillez choisir une date");
+    document.getElementById("info").innerHTML = "Veuillez choisir une date";
+    //attendre 3 secondes
+
     return;
-  } else if (today > deadline) {
-    alert("Veuillez choisir une date future");
+  } else if (new Date().getTime() > deadline) {
+    document.getElementById("info").innerHTML =
+      "Veuillez choisir une date future";
     return;
   } else {
+    document.getElementById("info").innerHTML = "";
+
     document.getElementById("end-date").innerHTML =
       "Date de fin : " + dateInput;
     x = setInterval(function () {
