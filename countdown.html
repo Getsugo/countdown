@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="countdown.css" />
+    <script src="countdown.js" defer></script>
+    <title>Countdown</title>
+  </head>
+  <body>
+    <input type="date" id="date" />
+    <button id="btn" onclick="yo()">Start</button>
+
+    <h1 id="az"></h1>
+    <div id="clockdiv">
+      <div>
+        <span class="days" id="day"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span class="hours" id="hour"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes" id="minute"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds" id="second"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
+
+    <p id="demo"></p>
+  </body>
+</html>
