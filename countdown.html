@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="countdown.css" />
     <script src="countdown.js" defer></script>
-    <title>Countdown</title>
+    <title>Compte à rebours</title>
   </head>
   <body>
     <input type="date" id="date" />
-    <button id="btn" onclick="yo()">Start</button>
+    <button class="btns" id="btn" onclick="yo()">Start</button>
+    <button class="btns" id="btn2" onclick="stop()">Stop</button>
 
-    <h1 id="az"></h1>
+    <h1 id="end-date">Date de fin :</h1>
     <div id="clockdiv">
       <div>
-        <span class="days" id="day"></span>
-        <div class="smalltext">Days</div>
+        <span class="days" id="day">0</span>
+        <div class="smalltext">Jours</div>
       </div>
       <div>
-        <span class="hours" id="hour"></span>
-        <div class="smalltext">Hours</div>
+        <span class="hours" id="hour">0</span>
+        <div class="smalltext">Heures</div>
       </div>
       <div>
-        <span class="minutes" id="minute"></span>
+        <span class="minutes" id="minute">0</span>
         <div class="smalltext">Minutes</div>
       </div>
       <div>
-        <span class="seconds" id="second"></span>
-        <div class="smalltext">Seconds</div>
+        <span class="seconds" id="second">0</span>
+        <div class="smalltext">Secondes</div>
       </div>
     </div>
 

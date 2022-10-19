@@ -10,12 +10,8 @@ h1 {
   font-size: 40px;
   margin: 40px 0px 20px;
 }
-#date {
-  color: #396;
 
-  margin: 40px 0px 20px;
-}
-#btn {
+.btns {
   background: #00bf96;
   color: #fff;
   padding: 10px;
@@ -48,4 +44,22 @@ h1 {
 smalltext {
   padding-top: 5px;
   font-size: 16px;
+}
+
+input {
+  background-color: #00bf96;
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #00816a;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
 }
