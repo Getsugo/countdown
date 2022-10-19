@@ -48,6 +48,7 @@ function yo() {
 
 function stop() {
   clearInterval(x);
+  document.getElementById("demo").innerHTML = "";
   document.getElementById("date").disabled = false;
   document.getElementById("btn").disabled = false;
   document.getElementById("date").value = "";
